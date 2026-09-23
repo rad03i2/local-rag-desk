@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-rag-desk"
+version = "1.0.0"
+description = "Privacy-first local BM25 retrieval workspace for source-grounded document context."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Radwan Abdulhadi Ahmed" }]
+keywords = ["rag", "retrieval", "bm25", "local", "privacy", "arabic"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+local-rag = "local_rag_desk.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/rad03i2/local-rag-desk"
+Repository = "https://github.com/rad03i2/local-rag-desk"
+
+[tool.setuptools.packages.find]
+where = ["src"]
